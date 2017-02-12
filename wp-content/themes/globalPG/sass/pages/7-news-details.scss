@@ -1,0 +1,116 @@
+.news-details-cont{
+  margin: 45px 0 40px 0;
+  .text-cont {
+    h2 {
+      margin: 0 0 15px 0;
+      color: black;
+      font-size: 26px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .date {
+      margin: 0 0 20px 0;
+      color: rgb(187, 29, 32);
+      font-size: 16px;
+      font-weight: 400;
+    }
+    img{
+      margin: 10px auto;
+      display: block;
+      width: 100%;
+      max-height: 400px;
+      max-width: 400px;
+    }
+    .text{
+      text-align: justify;
+    }
+  }
+  .news-photo-cont{
+    a.fancybox{
+      margin: 15px auto;
+      display: block;
+      max-width: 400px;
+      max-height: 400px;
+    }
+    a.fancybox img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .link{
+    float: right;
+    color: rgb(187, 29, 32);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
+  .link:hover{
+    color: black;
+    text-decoration: underline;
+  }
+  .link:before{
+    content: "<<";
+    position: absolute;
+    top: 0;
+    left: -25px;
+  }
+}
+@media screen and (min-width: 500px){
+  .news-details-cont{
+    .text-cont {
+      img{
+        margin: 0 10px 0 0;
+        float: left;
+        height: 160px;
+        width: 230px;
+      }
+    }
+    .news-photo-cont{
+      text-align: center;
+      display: flex;
+      a.fancybox{
+        margin: 15px auto;
+        float: left;
+        display: block;
+        width: 20%;
+      }
+      a.fancybox img{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .news-details-cont{
+    .news-photo-cont{
+      text-align: center;
+      display: block;
+      a.fancybox{
+        margin: 15px auto;
+        float: left;
+        display: block;
+        width: 144px;
+        height: 134px;
+      }
+
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  .news-details-cont{
+    .news-photo-cont{
+      text-align: center;
+      display: block;
+      a.fancybox{
+        margin: 15px auto;
+        float: left;
+        display: block;
+        width: 20%;
+        height: 170px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,270 @@
+.town-list{
+  .comp-cont{
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+  .comp-side-bar{
+    width: 25%;
+    float: left;
+    background-color: rgb(187, 29, 32);
+    .text{
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 40px;
+      position: relative;
+    }
+
+    .text:before{
+      content: "";
+      background: url("../images/arrow.png") no-repeat;
+      width: 23px;
+      height: 16px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+    .tabs{
+      margin: 0 0 20px 0;
+      position: relative;
+      z-index: 9999;
+    }
+    .tab{
+      margin: 0 1% 0 0;
+      width: 100%;
+      height: 50px;
+
+      background-color: #bb1d20;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 50px;
+      text-align: center;
+      float: left;
+      cursor: pointer;
+    }
+    .tab:hover{
+      background-color: rgb(138, 23, 25);
+    }
+    .tab.active{
+      background-color: rgb(138, 23, 25);
+    }
+    .tab-content{
+      min-height: 320px;
+    }
+    .tab-item-side-bar{
+      min-height: 320px;
+    }
+    .tab-item-side-bar a{
+      margin:  0 0 15px 0;
+      padding: 0 0 0 10px;
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: rgb(187, 29, 32);
+      color: white;
+      font-size: 22px;
+      line-height: 50px;
+      font-weight: 400;
+      text-transform: uppercase;
+      position: relative;
+    }
+    .tab-item-side-bar a:after{
+      content: "";
+      background: url("../images/town-trik.png") no-repeat;
+      width: 10px;
+      height: 15px;
+      position: absolute;
+      top: 18px;
+      right: 25px;
+
+    }
+    .tab-item-side-bar form{
+    }
+    .tab-item-side-bar h4{
+      padding: 0 0 0 30px;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      clear: both;
+    }
+    .tab-item-side-bar input{
+      float: left;
+    }
+    .checkbox-div{
+      color: rgb(255, 254, 254);
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .checkbox-div{
+      margin-top: 20px;
+    }
+    .tab-item .checkbox-cont:last-child{
+      margin-bottom: 45px;
+    }
+    .select-cont{
+      margin: 15px 0 0 0;
+    }
+
+    .tab-item-side-bar form select{
+      margin: 0;
+      width: 100%;
+      color: black;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .wrap_select{
+      margin: 0 5% 30px 5%;
+      min-width: 110px;
+      height: 30px;
+      float: left;
+      width:90%;
+    }
+    .select-cont{
+      .wrap_select{
+        margin: 0 5% 0 0;
+        width: 42%;
+        float: left;
+        min-width: 30px;
+      }
+      .wrap_select select{
+        padding-right: 25px;
+        padding-left: 5px;
+      }
+      .wrap_select:first-child{
+        margin-left: 5%;
+      }
+    }
+    input.button{
+      margin: 35px 15px 25px 0;
+      float: right;
+      width: 140px;
+      height: 30px;
+      background-color: rgb(184, 18, 3);
+      border: 1px solid white;
+
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .button:hover{
+      background-color: rgb(138, 23, 25);
+    }
+  }
+
+  .swim-first{
+    display: none;
+    width: 75%;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 102;
+  }
+  .swim-second{
+    display: none;
+    width: 75%;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    left: 25%;
+  }
+  .rent:hover{
+    display: block;
+  }
+  .sale:hover{
+    display: block;
+  }
+  .swiming-towns{
+    //margin: 0 0 0 26%;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    width: 99%;
+    background-color: rgb(187, 29, 32);
+  //
+    min-height: 400px;
+  //
+    .contry-cont{
+      margin: 25px 0 0 3%;
+      float: left;
+      width: 21%;
+      height: 170px;
+      overflow: hidden;
+      a:hover{
+        color: black;
+      }
+      h2{
+        margin: 0 0 10px 0;
+        color: $textColor;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      ul{
+        list-style-type: none;
+        color: $textColor;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .link{
+        color: $textColor;
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+      }
+      .link:after{
+        content: ">>";
+        position: absolute;
+        top: 2px;
+        right: -18px;
+      }
+    }
+  }
+  .active{
+    display: block;
+  }
+  .check-box-comp-cont {
+    position: absolute;
+    top: 0px;
+    left: 27%;
+    width: 73%;
+    z-index: 100;
+    background-color: rgb(187, 29, 32);
+    .checkbox-cont{
+      float: left;
+      width: 33.3333%;
+      height: 50px;
+    }
+    .checkbox-cont .checkbox-div{
+      margin-top: 16px;
+      margin-left: 40px;
+      color: rgb(255, 254, 254);
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .town-list{
+    .comp-cont{
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  .town-list{
+    .swiming-towns .contry-cont{
+      margin-left: 2%;
+      width: 18%;
+    }
+  }
+}

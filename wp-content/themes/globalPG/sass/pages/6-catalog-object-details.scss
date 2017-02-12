@@ -1,0 +1,163 @@
+.catalog-object-details{
+  .catalog-main{
+     .obj-cont h2{
+       margin: 0 0 20px 10px;
+       color: black;
+       font-size: 22px;
+       font-weight: 400;
+       text-transform: uppercase;
+    }
+    .obj-cont img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .obj-cont .obj-info {
+      margin: 25px 0 0 0;
+      p {
+        margin-bottom: 20px;
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        span {
+          font-weight: 700;
+        }
+      }
+      p.text{
+        text-align: justify;
+      }
+    }
+    .obj-cont{
+      h3{
+        color: rgb(187, 29, 32);
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .logo-company{
+        margin: 20px 0 20px 0;
+        display: block;
+        max-width: 175px;
+        max-height: 65px;
+      }
+      .logo-company img{
+        width: 100%;
+      }
+      .mail-cont{
+        margin-bottom: 35px;
+      }
+      .email{
+        color: black;
+        font-size: 15px;
+        line-height: 35px;
+        font-weight: 400;
+      }
+      .email:hover{
+        color: rgb(187, 29, 32);
+      }
+      .link{
+        display: none;
+      }
+    }
+    .photo-cont {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .catalog-object-details{
+    .check-box-comp-cont{
+      display: none;
+    }
+    .catalog-main{
+      margin: 0 0 0 2%;
+      width: 73%;
+      .obj-cont h2{
+        margin: 0 0 20px 10px;
+        color: black;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .obj-cont .img-cont{
+        margin: 0 15px 0 0;
+        width: 290px;
+        height: 200px;
+        float: left;
+      }
+      .obj-cont .obj-info {
+        p.text{
+          margin: 10px 0 20px 0;
+        }
+      }
+      .obj-cont{
+        .logo-company{
+          margin: 20px 60px 20px 0;
+          float: left;
+        }
+        .mail-cont{
+          float: left;
+        }
+        .link{
+          margin: 80px 30px 0 0;
+          float: right;
+          color: rgb(187, 29, 32);
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: underline;
+          position: relative;
+          display: inline-block;
+        }
+        .margin-minus{
+          margin-top: 0;
+          margin-bottom: 30px;
+        }
+        .link:after{
+          content: ">>";
+          position: absolute;
+          top: 1px;
+          right: -25px;
+        }
+        .link:hover{
+          color: black;
+        }
+      }
+      .photo-cont{
+        display: block;
+        .fancybox{
+          display: block;
+          float: left;
+          width: 33.3333%;
+          height: 120px;
+        }
+        .fancybox img{
+          padding:  10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  .catalog-object-details{
+    .catalog-main{
+      .obj-cont .img-cont{
+        width: 430px;
+        height: 280px;
+      }
+      .obj-cont .obj-info {
+        p {
+          margin-bottom: 15px;
+        }
+        p.text{
+          margin: 40px 0 20px 0;
+        }
+      }
+      .photo-cont{
+        .fancybox{
+          width: 33.3333%;
+          height: 150px;
+        }
+      }
+    }
+  }
+}

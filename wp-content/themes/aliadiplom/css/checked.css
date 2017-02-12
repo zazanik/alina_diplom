@@ -1,0 +1,355 @@
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table; }
+
+.container::after,
+.clearfix::after {
+    clear: both; }
+
+
+a, a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Навігація хедер*/
+
+header{
+    position: relative;
+    height: 360px;
+    background: white url("../images/cl-bg2.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+header .logo{
+    margin: 0 0 0 0;
+    float: left;
+}
+header .logo a{
+    display: block;
+    width: 170px;
+    height: 150px;
+}
+header .logo a img{
+    width: 100%;
+    height: 100%;
+}
+header .logo h1{
+    margin: 0;
+}
+
+h2.art-Logo-name{
+    margin: 30px 0 30px 0;
+    float: left;
+    width: 570px;
+}
+.logo_and_text_cont{
+    margin: 0 auto;
+    clear: both;
+    width: 750px;
+    background: #005DCE;
+    border-radius: 50px;
+}
+
+.nav-menu ul.sub-menu{
+    display: none;
+}
+.nav-menu{
+    margin: 0 30px 50px 0;
+}
+.nav-menu ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu > ul > li{
+    margin: 0 0 0 1px;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 110px;
+    text-align: center;
+    background-color: #005DCE;
+    color: white;
+    line-height: 50px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-menu > ul > li a{
+    display: block;
+}
+
+.nav-menu > ul > li:hover {
+    background-color: #D71714;
+}
+.nav-menu > ul > li a:hover{
+    color: white;
+}
+
+/*Лого*/
+
+.art-Logo{
+    top: 135px;
+    text-align: center;
+}
+#name-text a{
+    font-size: 40px !important;
+}
+
+/*footer*/
+
+footer{
+    min-height: 100px;
+    background: black;
+}
+
+/*Головна сторінка*/
+
+.art-contentLayout .main-page {
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.main-page img{
+    margin-top: 0;
+    border-radius: 10px;
+}
+.main-page .padding{
+    padding: 0 15px;
+}
+
+/* page-news */
+
+.art-PostContent{
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.overflow{
+    height: 135px;
+    overflow: hidden;
+}
+
+/* background and useful images */
+
+#art-page-background-gradient{
+    background-image: none;
+}
+body{
+    background: #F1F1F1;
+}
+div.art-Header-jpeg{
+    background-image: none;
+}
+div.art-Header-png{
+    background-image: none;
+}
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl{
+    background-image: none;
+}
+.art-Sheet{
+    margin: 15px auto;
+    /*margin-top: 20px;*/
+    /*background: #B84F32 no-repeat;*/
+    /*background: #005DCE;*/
+    border-radius: 10px;
+}
+footer{
+    background-color: #0e0e0e;
+}
+
+
+
+
+
+/* ширина сайдбарів і основного контента */
+.art-contentLayout .art-content{
+    width: 50%;
+    margin: 0;
+    /*border-radius: 10px;*/
+}
+.art-contentLayout .art-sidebar1{
+    width: 25%;
+    margin: 0;
+}
+.art-contentLayout .art-sidebar2{
+    width: 25%;
+    margin: 0;
+}
+.art-contentLayout{
+    margin: 0 auto;
+}
+.art-Block{
+    margin: 0 7px 7px 7px;
+    /*border: 1px solid #005DCE;*/
+    /*border-radius: 10px;*/
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Убиваю картинки бекграунда в сайд барі */
+.art-Block-body{
+    /*border-radius: 10px;*/
+    background-color: transparent;
+    padding: 0 0 7px 0;
+}
+.art-BlockHeader{
+    /*background: #B84F32 no-repeat;*/
+    background: #005DCE;
+    /*border-radius: 10px;*/
+}
+.search-form-fix{
+    padding: 0 0 0 10px;
+    width: 96%;
+    height: 25px;
+    border: 1px solid #005DCE;
+    /*border-radius: 10px;*/
+    outline: none;
+}
+.art-button {
+    width: 40px;
+    height: 20px;
+    background: #B84F32;
+}
+.art-BlockHeader .t{
+    color: white;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.art-button-fix{
+    margin: 20px 0 0 0;
+    width: 90px;
+    height: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    /*background-color: #B84F32;*/
+    background: #005DCE;
+}
+.art-button-fix:hover{
+    background-color: #D71714;
+}
+.art-BlockContent-body a:visited, .art-BlockContent-body a.visited, .art-BlockContent-body a:link{
+    color: #005DCE;
+}
+.art-PostHeader a:visited, .art-PostHeader a.visited, .art-PostHeader a:link{
+    color: #005DCE;
+}
+
+.art-BlockContent-body a:hover{
+    text-decoration: underline;
+}
+.art-Post {
+    margin: 0 7px 14px 7px;
+    background: transparent;
+    /*border-radius: 5px;*/
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/*Коментарі*/
+ul.commentlist{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+ul.commentlist ul{
+    list-style-type: none;
+}
+ul.commentlist >li.comment{
+
+}
+ul.commentlist > li:nth-child(2n){
+
+}
+ul.children{
+    margin: 0;
+    padding: 0;
+}
+.commentlist li li{
+    margin: 0;
+}
+
+ul.commentlist > li.comment > ul.children{
+    padding-left: 30px;
+}
+.border-bottom-line{
+    border-radius: 0;
+}
+.float-left{
+    float: left;
+}
+.commentlist li .avatar{
+    margin-right: 10px;
+    float: left;
+}
+#commentform textarea{
+    border: 1px solid #ddd;
+}
+.art-button-wrapper .art-button{
+    padding: 0;
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    background-color: #005DCE;
+    color: white;
+    cursor: pointer;
+}
+.art-button-wrapper .art-button:hover{
+    color: white;
+    background-color: #D71714;
+}
+
+
+@media screen and (min-width: 1200px){
+    .art-Sheet{
+        width: 1180px;
+    }
+    .art-contentLayout{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1640px){
+    .art-Sheet{
+        width: 1620px;
+    }
+    .art-contentLayout{
+        width: 100%;
+    }
+    .art-contentLayout .art-sidebar1{
+        width: 15%;
+    }
+    .art-contentLayout .art-sidebar2{
+        width: 15%;
+    }
+    .art-contentLayout .art-content{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1920px){
+    .art-Sheet{
+        width: 1900px;
+    }
+    .art-contentLayout{
+        width: 100%;
+    }
+    .art-contentLayout .art-sidebar1{
+        width: 15%;
+    }
+    .art-contentLayout .art-sidebar2{
+        width: 15%;
+    }
+    .art-contentLayout .art-content{
+        width: 70%;
+    }
+}

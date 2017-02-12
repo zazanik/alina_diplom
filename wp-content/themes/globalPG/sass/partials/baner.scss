@@ -1,0 +1,33 @@
+.baner{
+  display: none;
+  margin: 50px 0 60px 0;
+  a{
+    float: left;
+    width: 48%;
+  }
+  a:first-child{
+    margin: 0 2% 0 0;
+  }
+  img{
+    width: 100%;
+  }
+}
+.baner-top{
+  display: none;
+  margin: 35px 0;
+  a{
+    display: block;
+  }
+  img{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px){
+  .baner{
+    display: block;
+  }
+  .baner-top{
+    display: block;
+  }
+}
+

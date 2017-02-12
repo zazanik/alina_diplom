@@ -1,0 +1,74 @@
+//mobile footer
+footer{
+  background-color: rgb(16, 16, 16);
+  background-image: linear-gradient(to top, black 0%, rgb(51, 48, 48) 100%);
+}
+.phone-footer{
+  min-height: 230px;
+  a{
+    text-align: center;
+    display: block;
+    color: $textColor;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  a:first-child{
+    margin: 40px 0 30px 0;
+  }
+  a:nth-child(2){
+    margin: 0 0 30px 0;
+  }
+}
+.computer-footer{
+  display: none;
+}
+.global-copyright{
+  height: 29px;
+  hr{
+    margin: 0;
+    border: none;
+    background-color: rgb(58, 56, 56);
+    height: 1px;
+  }
+  div{
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+}
+
+
+
+@media screen and (min-width: 768px){
+  .phone-footer{
+    display: none;
+  }
+  .computer-footer{
+    display: block;
+  }
+  .computer-footer .container ul {
+    margin: 30px 0 25px 0;
+    text-align: justify;
+    overflow: hidden;
+    height: 20px;
+    text-transform: uppercase;
+  }
+  .computer-footer .container ul li {
+    display: inline;
+  }
+  .computer-footer .container ul li a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: $textColor;
+  }
+  .computer-footer .container ul a:hover {
+    color: #ff0000;
+  }
+  .computer-footer .container ul:after {
+    content: "1";
+    margin-left: 100%;
+    display: inline-block;
+  }
+
+}

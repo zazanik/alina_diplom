@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  min-height: calc(100vh - 155px);
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container{
+    width: 970px;
+  }
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+//clearfix
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+}
+.container::after,
+.clearfix::after{
+  clear: both;
+}
+
+
+body{
+  font-family: $mainFont;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+}
+a, a:hover, a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}

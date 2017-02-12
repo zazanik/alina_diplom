@@ -1,0 +1,47 @@
+//checkbox
+.checkbox-cont {
+  .checkbox {
+    display: none;
+  }
+  .checkbox-div {
+    margin: 0 0 0 30px;
+    padding-left: 25px;
+    background-image: url("../images/rounded-rectangle-1.png");
+    background-repeat: no-repeat;
+    height: 19px;
+    line-height: 19px;
+    font-size: 18px;
+    cursor: default;
+  }
+  div.add_email_checked {
+    background-image: url("../images/checked.png");
+  }
+}
+//select
+
+form select{
+  width:100%;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border: none;
+  padding: 7px 50px 7px 10px;
+  line-height: 1 !important;
+  background: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+form select option{
+  outline: none;
+}
+.tab-content .tab-item form select::-ms-expand {
+  display: none;
+}
+.wrap_select{
+  margin: 0 auto 40px auto;
+  width:90%;
+  overflow:hidden;
+  height:auto;
+  background: url("../images/trik_3.png") no-repeat center right 10px #FFF !important;
+  position: relative;
+}

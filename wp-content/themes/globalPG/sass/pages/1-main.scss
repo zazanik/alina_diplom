@@ -1,0 +1,471 @@
+//slider
+
+.main-slider{
+  .flexslider{
+    margin: 0;
+    border: none;
+  }
+  .flexslider ul li img{
+    height: 260px;
+    max-width: 100%;
+    background-size: cover;
+  }
+  .flex-control-nav{
+    display: none;
+  }
+  .flexslider .info{
+    margin: -260px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  .flexslider .info h2{
+    margin: 35px auto 0 auto;
+    padding: 0 20px;
+    color: $textColor;
+    font-family: $mainFont;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .flexslider .info hr{
+    border: none;
+    width: 75px;
+    height: 1px;
+    background-color: gainsboro;
+  }
+  .flexslider .info .text{
+    padding: 0 40px;
+    color: $textColor;
+    font-family: $mainFont;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+  .flexslider .info .button{
+    margin: 20px auto 35px auto;
+    position: relative;
+    z-index: 10;
+    width: 110px;
+    height: 30px;
+    border: 1px solid gainsboro;
+
+    color: $textColor;
+    font-family: "Arial","sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .flexslider .info .button:hover{
+    color: rgb(187, 29, 32);
+    border-color: rgb(187, 29, 32);
+  }
+  .flexslider ul li{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .sell-form{
+    margin: 15px 0 0 0;
+    padding: 0 0 1px 0;
+    background-color: rgb(187, 29, 32);
+    .button{
+      margin: 0 auto 40px;
+      width: 185px;
+      height: 30px;
+      background-color: rgb(184, 18, 3);
+      border: 1px solid white;
+      color: $textColor;
+      font-size: 15px;
+      font-weight: 400;
+      outline: none;
+      text-transform: uppercase;
+    }
+    .tab-content{
+      padding: 20px 0 1px 0;
+      background-color: rgb(187, 29, 32);
+    }
+    .tabs{
+      margin: 0 0 25px 0;
+    }
+    .tabs .tab{
+      float: left;
+      width: 50%;
+      height: 30px;
+      background-color: rgb(138, 23, 25);
+      text-align: center;
+      color: $textColor;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      cursor: pointer;
+    }
+    .tabs .active{
+      background-color: rgb(187, 29, 32);
+    }
+  }
+  .tab-content .tab-item form{
+    text-align: center;
+  }
+}
+
+//3-windows
+.windows-info{
+  margin: 15px 0 15px 0;
+  .window{
+    margin: 0 0 20px 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .window img{
+    width: 100%;
+    height: 100%;
+  }
+  .text-cont{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(187, 29, 32);
+  }
+  .text-cont h2{
+    margin: 12px 0 0 20px;
+    color: $textColor;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .text{
+    display: none;
+    padding: 20px 30px 20px 30px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $textColor;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+  }
+  .window a:hover{
+    .text{
+      display: block;
+    }
+    .text-cont h2{
+      display: none;
+    }
+  }
+}
+.first-banner{
+  margin: 70px 0 0 0;
+  display: none;
+  background: rgb(0, 0, 0) url("../images/bg-1.png") no-repeat;
+  background-size: cover;
+  min-height: 345px;
+  text-align: center;
+
+  h2{
+    margin: 100px 0 0 0;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  hr{
+    border: none;
+    width: 63px;
+    height: 1px;
+    background-color: white;
+  }
+  .text{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+//about company
+.about-company{
+  .about-cont{
+    margin: 0 0 40px 0;
+  }
+  h2{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  hr{
+    background-color: black;
+    width: 76px;
+    height: 1px;
+    border: none;
+  }
+  .text{
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+//rounds info
+.round-info{
+  background: black url("../images/bg-2.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  .row{
+    margin: 50px 0 0 0;
+  }
+  h2{
+    margin: 30px 0 0 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  hr{
+    width: 73px;
+    height: 1px;
+    background-color: white;
+    border: none;
+  }
+  .round-cont{
+    margin: 0 0 50px 0;
+    color: white;
+    text-transform: uppercase;
+  }
+  .round-cont .round{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .round-cont .round div:nth-child(1){
+    margin: 45px 0 0 0;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .round-cont .round div:nth-child(2){
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .round-cont h3{
+    margin: 25px 0 0 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+//Shares
+.shares{
+  h2{
+    margin: 15px 0 20px 0;
+    padding: 0 0 0 10px;
+    background-color: rgb(187, 29, 32);
+    width: 100%;
+    height: 44px;
+
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+  .apartment a{
+    display: block;
+    overflow: hidden;
+  }
+  .apartment img{
+    width: 100%;
+    height: 100%;
+  }
+  .apartment .text{
+    margin: 25px 0 20px 10px;
+    width: 165px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .apartment .price{
+    margin: 0 0 20px 10px;
+    color: rgb(187, 29, 32);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+//latest news
+
+.latest-news{
+  display: none;
+  margin: 40px 0 0 0;
+  h2{
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+  }
+  .latest-news-cont{
+    margin: 0 5% 0 0;
+    float: left;
+    width: 45%;
+    img{
+      float: left;
+      width: 180px;
+      height: 170px;
+    }
+    h3{
+      margin: 0 0 15px 195px;
+      color: black;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+    .date{
+      margin: 0 0 0 195px;
+      color: rgb(187, 29, 32);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .text{
+      margin: 0 0 0 195px;
+      height: 75px;
+      overflow: hidden;
+      color: black;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: justify;
+    }
+    .more{
+      float: right;
+      color: rgb(187, 29, 32);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: underline;
+      vertical-align: bottom;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-slider{
+    position: relative;
+    .flexslider ul li img{
+      height: 445px;
+    }
+    .flexslider .info h2{
+      margin-top: 0;
+      font-size: 26px;
+      line-height: 32px;
+      width: 440px;
+    }
+    .flexslider .info .text{
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+      line-height: 18px;
+      width: 290px;
+    }
+    .flex-direction-nav a{
+      width: 34px;
+      height: 64px;
+    }
+    .flex-direction-nav a:before, .flex-direction-nav a.flex-next:before{
+      width: 34px;
+      height: 64px;
+      background-image: url('../images/perelist_1.png');
+      margin-top: 0;
+    }
+    .flex-direction-nav a.flex-next:before{
+      width: 34px;
+      height: 64px;
+      background-image: url('../images/perelist_2.png');
+    }
+    .sell-cont{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .sell-form{
+      margin: 25px 0 0 0;
+      background-color: transparent;
+    }
+    .sell-form .tabs{
+      margin: 0;
+    }
+    .sell-form .tabs .tab{
+      width: 130px;
+    }
+    .sell-form .tab-content{
+      padding-bottom: 20px;
+      background-color: rgb(187, 29, 32);
+    }
+    .wrap_select{
+      margin: 0 1% 0 2%;
+      float: left;
+      width: 22%;
+    }
+    .sell-form .button{
+      margin: 0 1% 0 1%;
+      float: left;
+      width: 22%;
+    }
+  }
+  .windows-info .window{
+    width: 31%;
+    margin: 0 1% 0 1%;
+    height: 210px;
+  }
+  .first-banner{
+    display: block;
+  }
+  .about-company{
+    margin: 100px 0 0 0;
+  }
+  .shares{
+    h2{
+      height: 65px;
+      line-height: 65px;
+    }
+  }
+  .latest-news{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .windows-info .window .text-cont h2{
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .windows-info .window:first-child .text-cont h2{
+    margin-top: 6px;
+  }
+  .windows-info .window{
+    height: 270px;
+  }
+}
